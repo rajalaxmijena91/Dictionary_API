@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="14" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-25T17:16:23 CDT" name="Suite" finished-at="2022-07-25T17:16:34 CDT" duration-ms="10425">
+    <groups>
+    </groups>
+    <test started-at="2022-07-25T17:16:23 CDT" name="Test" finished-at="2022-07-25T17:16:34 CDT" duration-ms="10425">
+      <class name="deleteDictinaryAPI.DeleteAdictionary">
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:deleteDictinaryAPI.DeleteAdictionary@4f6ee6e4]" started-at="2022-07-25T17:16:33 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:33 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="DeleteDictionary()[pri:0, instance:deleteDictinaryAPI.DeleteAdictionary@4f6ee6e4]" started-at="2022-07-25T17:16:33 CDT" name="DeleteDictionary" finished-at="2022-07-25T17:16:33 CDT" duration-ms="253" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [204]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [204]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at org.testng.Assert.assertEquals(Assert.java:1274)
+at deleteDictinaryAPI.DeleteAdictionary.DeleteDictionary(DeleteAdictionary.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDictionary -->
+        <test-method signature="ValidateDeletedKeyUsingGet()[pri:1, instance:deleteDictinaryAPI.DeleteAdictionary@4f6ee6e4]" started-at="2022-07-25T17:16:33 CDT" name="ValidateDeletedKeyUsingGet" finished-at="2022-07-25T17:16:33 CDT" duration-ms="228" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:976)
+at org.testng.Assert.assertEquals(Assert.java:1010)
+at deleteDictinaryAPI.DeleteAdictionary.ValidateDeletedKeyUsingGet(DeleteAdictionary.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateDeletedKeyUsingGet -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:deleteDictinaryAPI.DeleteAdictionary@4f6ee6e4]" started-at="2022-07-25T17:16:33 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:33 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:deleteDictinaryAPI.DeleteAdictionary@4f6ee6e4]" started-at="2022-07-25T17:16:33 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:33 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="DeleteDictionaryWithOutAuthorization()[pri:2, instance:deleteDictinaryAPI.DeleteAdictionary@4f6ee6e4]" started-at="2022-07-25T17:16:33 CDT" name="DeleteDictionaryWithOutAuthorization" finished-at="2022-07-25T17:16:33 CDT" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDictionaryWithOutAuthorization -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:deleteDictinaryAPI.DeleteAdictionary@4f6ee6e4]" started-at="2022-07-25T17:16:33 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:33 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="DeleteDictionaryWithInvalidID()[pri:3, instance:deleteDictinaryAPI.DeleteAdictionary@4f6ee6e4]" started-at="2022-07-25T17:16:33 CDT" name="DeleteDictionaryWithInvalidID" finished-at="2022-07-25T17:16:34 CDT" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteDictionaryWithInvalidID -->
+      </class> <!-- deleteDictinaryAPI.DeleteAdictionary -->
+      <class name="createOrModifyKeyValuePairAPI.GetAValue">
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.GetAValue@7c729a55]" started-at="2022-07-25T17:16:30 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:30 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="GetPerticularKeyValue()[pri:0, instance:createOrModifyKeyValuePairAPI.GetAValue@7c729a55]" started-at="2022-07-25T17:16:30 CDT" name="GetPerticularKeyValue" finished-at="2022-07-25T17:16:31 CDT" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetPerticularKeyValue -->
+        <test-method signature="GetPerticularKeyValueWithOutAuth()[pri:1, instance:createOrModifyKeyValuePairAPI.GetAValue@7c729a55]" started-at="2022-07-25T17:16:31 CDT" name="GetPerticularKeyValueWithOutAuth" finished-at="2022-07-25T17:16:31 CDT" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetPerticularKeyValueWithOutAuth -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.GetAValue@7c729a55]" started-at="2022-07-25T17:16:31 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:31 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.GetAValue@7c729a55]" started-at="2022-07-25T17:16:31 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:31 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="GetPerticularKeyValueWithInvalidData()[pri:2, instance:createOrModifyKeyValuePairAPI.GetAValue@7c729a55]" started-at="2022-07-25T17:16:31 CDT" name="GetPerticularKeyValueWithInvalidData" finished-at="2022-07-25T17:16:32 CDT" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetPerticularKeyValueWithInvalidData -->
+      </class> <!-- createOrModifyKeyValuePairAPI.GetAValue -->
+      <class name="createOrModifyKeyValuePairAPI.GetAllKeys">
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.GetAllKeys@6a192cfe]" started-at="2022-07-25T17:16:23 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:24 CDT" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="GetAllKey()[pri:0, instance:createOrModifyKeyValuePairAPI.GetAllKeys@6a192cfe]" started-at="2022-07-25T17:16:24 CDT" name="GetAllKey" finished-at="2022-07-25T17:16:25 CDT" duration-ms="1628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllKey -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.GetAllKeys@6a192cfe]" started-at="2022-07-25T17:16:25 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:25 CDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="GetAllKeyWithOutAuth()[pri:1, instance:createOrModifyKeyValuePairAPI.GetAllKeys@6a192cfe]" started-at="2022-07-25T17:16:25 CDT" name="GetAllKeyWithOutAuth" finished-at="2022-07-25T17:16:26 CDT" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllKeyWithOutAuth -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.GetAllKeys@6a192cfe]" started-at="2022-07-25T17:16:26 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:26 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="GetAllKeyInvalidID()[pri:2, instance:createOrModifyKeyValuePairAPI.GetAllKeys@6a192cfe]" started-at="2022-07-25T17:16:26 CDT" name="GetAllKeyInvalidID" finished-at="2022-07-25T17:16:27 CDT" duration-ms="986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllKeyInvalidID -->
+      </class> <!-- createOrModifyKeyValuePairAPI.GetAllKeys -->
+      <class name="createDictionaryAPI.CreateOrModifyAkeyValuePair">
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createDictionaryAPI.CreateOrModifyAkeyValuePair@1fa268de]" started-at="2022-07-25T17:16:32 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:32 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="CreateAkeyValuePair()[pri:0, instance:createDictionaryAPI.CreateOrModifyAkeyValuePair@1fa268de]" started-at="2022-07-25T17:16:32 CDT" name="CreateAkeyValuePair" finished-at="2022-07-25T17:16:32 CDT" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAkeyValuePair -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createDictionaryAPI.CreateOrModifyAkeyValuePair@1fa268de]" started-at="2022-07-25T17:16:32 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:32 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="CreateAkeyValuePairWithOutAuthorization()[pri:0, instance:createDictionaryAPI.CreateOrModifyAkeyValuePair@1fa268de]" started-at="2022-07-25T17:16:32 CDT" name="CreateAkeyValuePairWithOutAuthorization" finished-at="2022-07-25T17:16:32 CDT" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAkeyValuePairWithOutAuthorization -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createDictionaryAPI.CreateOrModifyAkeyValuePair@1fa268de]" started-at="2022-07-25T17:16:32 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:32 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="ModifyAkeyValuePair()[pri:0, instance:createDictionaryAPI.CreateOrModifyAkeyValuePair@1fa268de]" started-at="2022-07-25T17:16:32 CDT" name="ModifyAkeyValuePair" finished-at="2022-07-25T17:16:33 CDT" duration-ms="151" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [201] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [201] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at org.testng.Assert.assertEquals(Assert.java:1274)
+at createDictionaryAPI.CreateOrModifyAkeyValuePair.ModifyAkeyValuePair(CreateOrModifyAkeyValuePair.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ModifyAkeyValuePair -->
+      </class> <!-- createDictionaryAPI.CreateOrModifyAkeyValuePair -->
+      <class name="createOrModifyKeyValuePairAPI.DeleteAKeyValuePair">
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.DeleteAKeyValuePair@47af7f3d]" started-at="2022-07-25T17:16:27 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:27 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="DeleteKeyValue()[pri:0, instance:createOrModifyKeyValuePairAPI.DeleteAKeyValuePair@47af7f3d]" started-at="2022-07-25T17:16:27 CDT" name="DeleteKeyValue" finished-at="2022-07-25T17:16:28 CDT" duration-ms="619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteKeyValue -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.DeleteAKeyValuePair@47af7f3d]" started-at="2022-07-25T17:16:28 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:28 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="ValidateDeletedKeyUsingGet()[pri:1, instance:createOrModifyKeyValuePairAPI.DeleteAKeyValuePair@47af7f3d]" started-at="2022-07-25T17:16:28 CDT" name="ValidateDeletedKeyUsingGet" finished-at="2022-07-25T17:16:29 CDT" duration-ms="946" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:976)
+at org.testng.Assert.assertEquals(Assert.java:1010)
+at createOrModifyKeyValuePairAPI.DeleteAKeyValuePair.ValidateDeletedKeyUsingGet(DeleteAKeyValuePair.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateDeletedKeyUsingGet -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.DeleteAKeyValuePair@47af7f3d]" started-at="2022-07-25T17:16:29 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:29 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="DeleteKeyValueWithOutAuth()[pri:2, instance:createOrModifyKeyValuePairAPI.DeleteAKeyValuePair@47af7f3d]" started-at="2022-07-25T17:16:29 CDT" name="DeleteKeyValueWithOutAuth" finished-at="2022-07-25T17:16:29 CDT" duration-ms="829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteKeyValueWithOutAuth -->
+        <test-method signature="DeleteKeyValueWithInvalidID()[pri:3, instance:createOrModifyKeyValuePairAPI.DeleteAKeyValuePair@47af7f3d]" started-at="2022-07-25T17:16:29 CDT" name="DeleteKeyValueWithInvalidID" finished-at="2022-07-25T17:16:30 CDT" duration-ms="548" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [404] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [404] but found [200]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at org.testng.Assert.assertEquals(Assert.java:1274)
+at createOrModifyKeyValuePairAPI.DeleteAKeyValuePair.DeleteKeyValueWithInvalidID(DeleteAKeyValuePair.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteKeyValueWithInvalidID -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createOrModifyKeyValuePairAPI.DeleteAKeyValuePair@47af7f3d]" started-at="2022-07-25T17:16:29 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:29 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+      </class> <!-- createOrModifyKeyValuePairAPI.DeleteAKeyValuePair -->
+      <class name="createDictionaryAPI.CreateAnewDictionary">
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createDictionaryAPI.CreateAnewDictionary@3bb9a3ff]" started-at="2022-07-25T17:16:32 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:32 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+        <test-method signature="CreateDictionary()[pri:0, instance:createDictionaryAPI.CreateAnewDictionary@3bb9a3ff]" started-at="2022-07-25T17:16:32 CDT" name="CreateDictionary" finished-at="2022-07-25T17:16:32 CDT" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDictionary -->
+        <test-method signature="CreateDictionarywithNoAuthorization()[pri:0, instance:createDictionaryAPI.CreateAnewDictionary@3bb9a3ff]" started-at="2022-07-25T17:16:32 CDT" name="CreateDictionarywithNoAuthorization" finished-at="2022-07-25T17:16:32 CDT" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDictionarywithNoAuthorization -->
+        <test-method is-config="true" signature="InitialSetup()[pri:0, instance:createDictionaryAPI.CreateAnewDictionary@3bb9a3ff]" started-at="2022-07-25T17:16:32 CDT" name="InitialSetup" finished-at="2022-07-25T17:16:32 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitialSetup -->
+      </class> <!-- createDictionaryAPI.CreateAnewDictionary -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

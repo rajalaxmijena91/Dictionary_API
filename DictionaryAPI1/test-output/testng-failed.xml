@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="createDictionaryAPI.CreateOrModifyAkeyValuePair">
+        <methods>
+          <include name="ModifyAkeyValuePair"/>
+          <include name="InitialSetup"/>
+        </methods>
+      </class> <!-- createDictionaryAPI.CreateOrModifyAkeyValuePair -->
+      <class name="createOrModifyKeyValuePairAPI.DeleteAKeyValuePair">
+        <methods>
+          <include name="InitialSetup"/>
+          <include name="DeleteKeyValueWithInvalidID"/>
+          <include name="ValidateDeletedKeyUsingGet"/>
+        </methods>
+      </class> <!-- createOrModifyKeyValuePairAPI.DeleteAKeyValuePair -->
+      <class name="deleteDictinaryAPI.DeleteAdictionary">
+        <methods>
+          <include name="ValidateDeletedKeyUsingGet"/>
+          <include name="DeleteDictionary"/>
+          <include name="InitialSetup"/>
+        </methods>
+      </class> <!-- deleteDictinaryAPI.DeleteAdictionary -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
